@@ -4,7 +4,7 @@ USER root
 RUN apk add isync
 
 VOLUME /config
-RUN touch "/config/mbsyncrc"
+RUN mkdir -p /config && touch "/config/mbsyncrc"
 ENV SYNC="mbsync -c /config/mbsyncrc"
 
 USER nobody
