@@ -3,7 +3,7 @@
 ## Introduction
 A very simple script to hook up to a IMAP server using IDLE and execute a script when remote state changes. It also runs it in case of connection death, and each 10 minutes. Only SSL targets are supported. This doesn't really aim to be generic.
 
-I use it to sync two active IMAP accounts along with `mbsync`. Kind of like a live backup. There are plenty of programs like this on GitHub. Tried all of them before writing my own, none worked for me.
+I use it to sync two active IMAP accounts along with `isync` (see `imap-idle-isync` directory). Kind of like a live backup. There are plenty of programs like this on GitHub. Tried all of them before writing my own, none worked for me.
 
 A template dockerfile is given so the program to be executed can just be put on top.
 
